@@ -1,0 +1,14 @@
+/calculate-price
+{
+    "product": 0,
+    "taxNumber": "GR635345758",
+    "couponCode": "F4"
+}
+
+/purchase
+{
+    "product": 0,
+    "taxNumber": "GR635345758",
+    "couponCode": "F4",
+    "paymentProcessor": "paypal"
+}
