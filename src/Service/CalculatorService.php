@@ -24,7 +24,7 @@ class CalculatorService
                 ->filter(fn ($el) => $el->getCode() === $couponCode)
                 ->first();
 
-            $discount = $coupon->getType() === CouponTypeEnum::Fix
+            $discount = $coupon->getType() === CouponTypeEnum::Fix->value
                 ? $coupon->getDiscount()
                 : $product->getPrice() / 100 * $coupon->getDiscount();
         }
